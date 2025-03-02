@@ -3,12 +3,10 @@ import React from 'react'
 import { PinContainer } from './ui/3d-pin'
 // import { ImArrowUpRight2 } from 'react-icons/im'
 
-const RecentProjects = () => {
+const Projects = () => {
   return (
     <div className="py-20" id="projects">
-      <h1 className="heading">
-        RECENT <span className="text-purple">PROJECTS</span>
-      </h1>
+      <h1 className="heading text-[#BDD4E7]">PROJECTS</h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-5">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div key={id} className="sm:h-[48rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]">
@@ -47,4 +45,4 @@ const RecentProjects = () => {
   );
 };
 
-export default RecentProjects
+export default Projects
