@@ -83,7 +83,7 @@
     @apply font-bold text-4xl md:text-5xl text-center;
   }
   .about-body {
-    @apply font-medium text-sm md:text-base lg:text-xl text-white
+    @apply font-normal text-sm md:text-base lg:text-xl text-white
   }
 
   .black-gradient {

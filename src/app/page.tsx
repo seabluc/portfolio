@@ -1,16 +1,18 @@
 "use client";
 
 import { FloatingNav } from "@/components/ui/FloatingNav";
+import { navItems } from "../data";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Skills from "@/components/Skills";
-import Grid from "../components/Grid";
-import Projects from "../components/Projects";
-import { navItems } from "../data";
+import Education from "@/components/Education";
+import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "../components/Footer";
+import Grid from "../components/Grid";
+import RecentProjects from "../components/RecentProjects";
 
-//change favicon
+//change favicon and font
 export default function Home() {
   return (
     <main className="bg-black-100 flex justify-center items-center
@@ -19,8 +21,10 @@ export default function Home() {
       <Hero />
       <About />
       <Skills />
-      <Grid />
+      <Education />
       <Projects />
+      <Grid />
+      <RecentProjects />
       <Contact />
       <Footer />
     </main>
