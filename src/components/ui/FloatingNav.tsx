@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   motion,
   AnimatePresence,
@@ -27,9 +27,6 @@ export const FloatingNav = ({
     // Check if current is not undefined and is a number
     if (typeof current === "number") {
       let direction = current! - scrollYProgress.getPrevious()!;
-      {/*if (current === 0.00 || scrollYProgress.getPrevious()! <= 0.05) {
-        setVisible(true);
-      }*/}
       if (scrollYProgress.get() < 0.05) {
         setVisible(false);
       } else {
@@ -41,6 +38,15 @@ export const FloatingNav = ({
       }
     }
   });
+
+  useEffect(() => {
+    if (visible) {
+      const timeout = setTimeout(() => {
+        setVisible(false);
+      }, 3500);
+      return () => clearTimeout(timeout);
+    }
+  }, [visible])
 
   return (
     <AnimatePresence mode="wait">
@@ -69,7 +75,7 @@ export const FloatingNav = ({
               "relative text-blue-1 items-center flex space-x-1 hover:text-black-1"
             )}
           >
-            <span className="text-xs md:text-sm lg:text-base font-medium sm:block">{navItem.name}</span>
+            <span className="text-sm md:text-base lg:text-lg font-medium sm:block">{navItem.name}</span>
           </Link>
         ))}
       </motion.div>

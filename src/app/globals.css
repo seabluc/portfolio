@@ -22,7 +22,7 @@
   }
 
   .about-body {
-    @apply font-normal text-base md:text-lg lg:text-xl text-white
+    @apply font-normal text-[15px] md:text-lg lg:text-xl text-white
   }
 
   .hero-button {
