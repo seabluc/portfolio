@@ -19,7 +19,7 @@ const About = () => {
             {/* Right section - About text */}
             <div className="flex flex-col flex-1 gap-2 md:gap-4 lg:gap-6">
               <p className="about-body">
-                Before tech, my passion was food. After graduating from culinary school,
+                Before tech, my passion was food. Upon graduating from culinary school,
                 I spent years in the food industry as a line cook.
                 But after a work injury forced me to step back, I had to reconsider my career path.
               </p>
@@ -34,7 +34,7 @@ const About = () => {
                 Outside of coding, I enjoy golfing, experimenting with new recipes, and playing competitive shooters.
               </p>
               <div className="py-4 md:py-2 lg:py-1">
-                <InvertButton title="Resume" />
+                <InvertButton title="Resume" href="/SeanLucGhim-CS-Resume-3-5-25.pdf"/>
               </div>
             </div>
 
