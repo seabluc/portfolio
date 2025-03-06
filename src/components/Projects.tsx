@@ -2,7 +2,6 @@ import { projects } from '@/data'
 import React from 'react'
 import InvertButton from './ui/InvertButton'
 import Link from 'next/link'
-import { FaLocationArrow } from 'react-icons/fa'
 
 const Projects = () => {
   return (

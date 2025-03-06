@@ -1,4 +1,4 @@
-import { languages, technologies1, technologies2, skills } from '@/data'
+import { skills } from '@/data'
 import React from 'react'
 
 const Skills = () => {

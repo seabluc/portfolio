@@ -4,13 +4,8 @@ import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import InvertButton from './ui/InvertButton'
 import { motion } from "framer-motion"
 import { navItems } from '@/data'
-//import { FlipWords } from './ui/FlipWords'
 
 const Hero = () => {
-  {/*let words = [
-    'full-stack developer', 'culinary enthusiast', 'computer geek',
-  ];*/}
-
   return (
     <header className="h-screen w-screen bg-white flex flex-col">
       {/* Add Seattle silhouette bg */}
@@ -33,20 +28,19 @@ const Hero = () => {
             words="I'm a full-stack developer."
             duration={0.75}
           />
-          {/*{`I'm a ${<FlipWords words={words} duration={1000} />}.`}*/}
           <motion.div
             className="flex flex-row mt-4 lg:mt-6 items-center justify-center"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1.25, duration: 0.75, ease: "easeOut" }}
           >
-            {navItems.map((section: any, idx: number) => (
+            {navItems.map((section, idx: number) => (
               <InvertButton
                 key={idx}
                 title={section.name}
                 className={section.hero}
                 href={section.link}
-                hero={true} />
+                hero={section.link} />
             ))}
           </motion.div>
         </div>
