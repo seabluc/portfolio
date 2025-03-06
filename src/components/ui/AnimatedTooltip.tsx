@@ -67,11 +67,11 @@ export const AnimatedTooltip = ({
                   rotate: rotate,
                   whiteSpace: "nowrap",
                 }}
-                className="absolute -top-8 -left-4 translate-x-1/2 flex text-xs flex-col items-center justify-center rounded-md bg-[#212227] bg-opacity-0 z-50 px-2 py-1"
+                className="absolute -top-8 -left-4 translate-x-1/2 flex text-sm flex-col items-center justify-center rounded-md bg-[#212227] bg-opacity-0 z-50 px-2 py-1"
               >
                 <div className="absolute inset-x-10 w-[20%] h-px " />
                 <div className="absolute left-10 w-[40%] h-px " />
-                <div className="font-bold text-[#8EAEC7] text-base">
+                <div className="font-semibold text-[#8EAEC7] text-base">
                   {item.name}
                 </div>
               </motion.div>

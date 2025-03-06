@@ -1,17 +1,45 @@
 import React from 'react'
+import { cn } from "@/utils/cn";
+import Link from 'next/link';
 
 const InvertButton = ({
-  title, handleClick, otherClasses
+  title,
+  className,
+  handleClick,
+  href,
+  hero,
 }: {
-  title: string; handleClick?: () => void; otherClasses?: string;
+  title: string;
+  className?: string;
+  handleClick?: () => void;
+  href?: string;
+  hero?: boolean;
 }) => {
-  return (
-    <button className="px-4 py-2 rounded-md bg-[#8EAEC7] text-white font-bold
-    text-sm md:text-base lg:text-lg transition duration-200 hover:bg-white
-    border border-white hover:text-[#8EAEC7]  hover:border-white" onClick={handleClick}>
-      <span className={`${otherClasses}`}>
+
+  const buttonClasses = cn(
+    "px-4 py-2 rounded-md bg-[#8EAEC7] text-white font-bold text-sm md:text-base lg:text-lg transition duration-200 hover:bg-white border border-white hover:text-[#8EAEC7] hover:border-white",
+    className
+  );
+
+  if (hero) {
+    return (
+      <Link href={href} className={buttonClasses}>
         {title}
-      </span>
+      </Link>
+    );
+  }
+
+  if (href) {
+    return (
+      <Link href={href} target="_blank" rel="noopener noreferrer" className={buttonClasses}>
+        {title}
+      </Link>
+    );
+  }
+
+  return (
+    <button className={buttonClasses} onClick={handleClick}>
+      {title}
     </button>
   )
 }

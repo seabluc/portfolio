@@ -1,203 +1,141 @@
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Skills", link: "#skills" },
-  { name: "Projects", link: "#projects" },
-  { name: "Contact", link: "#contact" },
-];
-
-export const gridItems = [
-  {
-    id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "/b1.svg",
-    spareImg: "",
-  },
-  {
-    id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
-  },
-
-  {
-    id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
-    className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
-  },
-  {
-    id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
-    spareImg: "",
-  },
+  { name: "About", link: "#about", hero: "font-semibold lg:text-2xl border-[#8EAEC7] rounded-none bg-white text-[#8EAEC7] hover:border-[#8EAEC7] hover:bg-[#8EAEC7] hover:text-white px-5 py-1" },
+  { name: "Skills", link: "#skills", hero: "font-semibold lg:text-2xl border-[#8EAEC7] rounded-none bg-white text-[#8EAEC7] hover:border-[#8EAEC7] hover:bg-[#8EAEC7] hover:text-white px-5 py-1" },
+  { name: "Projects", link: "#projects", hero: "font-semibold lg:text-2xl border-[#8EAEC7] rounded-none bg-white text-[#8EAEC7] hover:border-[#8EAEC7] hover:bg-[#8EAEC7] hover:text-white px-5 py-1" },
+  { name: "Contact", link: "#contact", hero: "font-semibold lg:text-2xl border-[#8EAEC7] rounded-none bg-white text-[#8EAEC7] hover:border-[#8EAEC7] hover:bg-[#8EAEC7] hover:text-white px-5 py-1" },
 ];
 
 export const skills = [
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 1,
+    img: "/javascriptLogo.png",
+    name: "JavaScript"
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 2,
+    img: "/typescriptLogo.png",
+    name: "TypeScript"
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 3,
+    img: "/htmlLogo.png",
+    name: "HTML5"
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 4,
+    img: "/cssLogo.png",
+    name: "CSS3"
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 5,
+    img: "/cppLogo.png",
+    name: "C++"
+  },
+  {
+    id: 6,
+    img: "/pythonLogo.png",
+    name: "Python"
+  },
+  {
+    id: 7,
+    img: "/javaLogo.png",
+    name: "Java"
+  },
+  {
+    id: 8,
+    img: "/sqlLogo.png",
+    name: "SQL"
+  },
+  {
+    id: 9,
+    img: "/nextjsLogo.png",
+    name: "Next"
+  },
+  {
+    id: 10,
+    img: "/reactLogo.png",
+    name: "React"
+  },
+  {
+    id: 11,
+    img: "/nodejsLogo.png",
+    name: "Node"
+  },
+  {
+    id: 12,
+    img: "/eslintLogo.png",
+    name: "ESLint"
+  },
+  {
+    id: 13, 
+    img: "/mysql8Logo.png",
+    name: "MySQL"
+  },
+  {
+    id: 14,
+    img: "/sequelizeLogo.png",
+    name: "Sequelize ORM"
+  },
+  {
+    id: 15, 
+    img: "/tailwindLogo.png",
+    name: "Tailwind CSS"
+  },
+  {
+    id: 16,
+    img: "/figmaLogo.png",
+    name: "Figma"
+  },
+  {
+    id: 17,
+    img: "/gitLogo.png",
+    name: "Git"
+  },
+  {
+    id: 18,
+    img: "/vercelLogo.png",
+    name: "Vercel"
+  },
+  {
+    id: 19,
+    img: "/firebaseLogo.png",
+    name: "Firebase"
   },
 ];
 
 export const projects = [
   {
     id: 1,
-    title: "EBBP - PC Build Compatibility Checker",
-    des: "Build a PC with the latest parts while ensuring compatibility with EvenBabiesBuildPCs (EBBP).",
+    title: "EvenBabiesBuildPCs (EBBP)",
+    iconLists: ["/nextjsLogo.png", "javascriptLogo.png", "pythonLogo.png", "/tailwindLogo.png", "/mysql8Logo.png", "sequelizeLogo.png"],
+    collabs: "Khoa Tra, Reagan Vu",
+    des: "A PC build compatibility checker that helps users select the latest PC components while ensuring they work together. Avoid costly mistakes by verifying hardware compatibility and detecting potential issues before assembling your build.",
+    live: "https://ebbp-web.vercel.app/",
+    repo: "https://github.com/seabluc/ebbp",
     img: "/ebbp.png",
-    iconLists: ["/next.svg", "js.svg", "py.svg", "/tail.svg", "/mysql.svg",],
-    link: "https://ebbp-web.vercel.app/",
+    demo: "https://www.youtube.com/watch?v=OhVf0lgJQfo",
   },
   {
     id: 2,
-    title: "Gesturised - Gesture Recognition Meeting Platform",
-    des: "Enhance your video conferencing experience by triggering unique actions through hand gestures.",
+    title: "Gesturised",
+    iconLists: ["/reactLogo.png", "/typescriptLogo.png", "/tailwindLogo.png", "/handtrackjs.png", "/zustand.svg", "eslintLogo.svg"],
+    collabs: "Philip Vu, Hannah Kim",
+    des: "An interactive virtual meeting platform that utilizes gesture recognition for to enhance video conferencing. Perform specific hand gestures to trigger unique actions, making online meetings more dynamic and engaging.",
+    live: "https://gesturised-web.vercel.app/",
+    repo: "https://github.com/GhostWalker562/gesturised",
     img: "/gesturised.png",
-    iconLists: ["/re.svg", "/ts.svg", "/tail.svg", "/vite.svg", "/github.svg"],
-    link: "https://gesturised-web.vercel.app/",
+    demo: "https://www.youtube.com/watch?v=9AoQ6BLA5h0",
   },
   {
     id: 3,
-    title: "Blockbuster",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
-  },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
-  },
-];
-
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
-];
-
-export const workExperience = [
-  {
-    id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-    className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
-  },
-  {
-    id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    title: "MyTamaFriend",
+    iconLists: ["/javascriptLogo.png", "/cssLogo.png", "/htmlLogo.png"],
+    collabs: "David Schurer, Selina Nguyen, Shivam Bakshi",
+    des: "A Tamagotchi-inspire game allows users to take care of their own virtual pet, Mametchi, by managing his stats, which include hunger, happiness, health, and restroom. MyTamaFriend stimulates the experience of raising a digital pet and challenges the user ot keep it alive and well.",
+    live: "https://davidschurer.github.io/Tamagotchi-Game/",
+    repo: "https://github.com/DavidSchurer/Tamagotchi-Game",
+    img: "/tamagotchi.png",
+    demo: "",
   },
 ];
 
@@ -325,7 +263,8 @@ export const technologies2 = [
     name: "Firebase"
   },
 ]
-export const socialMedia = [
+
+export const contactIcons = [
   {
     id: 1,
     img: "/git.svg",
