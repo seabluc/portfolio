@@ -134,8 +134,7 @@ export const projects = [
     des: "A Tamagotchi-inspire game allows users to take care of their own virtual pet, Mametchi, by managing his stats, which include hunger, happiness, health, and restroom. MyTamaFriend stimulates the experience of raising a digital pet and challenges the user ot keep it alive and well.",
     live: "https://davidschurer.github.io/Tamagotchi-Game/",
     repo: "https://github.com/DavidSchurer/Tamagotchi-Game",
-    img: "/tamagotchi.png",
-    demo: "",
+    img: "/mytamafriend.png",
   },
 ];
 
