@@ -13,7 +13,7 @@ const InvertButton = ({
   className?: string;
   handleClick?: () => void;
   href?: string;
-  hero?: boolean;
+  hero?: string;
 }) => {
 
   const buttonClasses = cn(
@@ -23,7 +23,7 @@ const InvertButton = ({
 
   if (hero) {
     return (
-      <Link href={href} className={buttonClasses}>
+      <Link href={hero} className={buttonClasses}>
         {title}
       </Link>
     );

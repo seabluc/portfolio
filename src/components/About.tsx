@@ -47,4 +47,3 @@ const About = () => {
 }
 
 export default About
-{/* include button linking to resume. update resume w/ hyperlinks. incorporate UW theme (bg)? */ }
