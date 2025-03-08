@@ -75,7 +75,7 @@ export const FloatingNav = ({
               "relative text-blue-1 items-center flex space-x-1 hover:text-black-1"
             )}
           >
-            <span className="text-sm md:text-base lg:text-lg font-medium sm:block">{navItem.name}</span>
+            <span className="text-base lg:text-lg font-medium sm:block">{navItem.name}</span>
           </Link>
         ))}
       </motion.div>

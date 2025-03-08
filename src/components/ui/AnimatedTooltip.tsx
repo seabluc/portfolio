@@ -72,7 +72,7 @@ export const AnimatedTooltip = ({
               >
                 <div className="absolute inset-x-10 w-[20%] h-px " />
                 <div className="absolute left-10 w-[40%] h-px " />
-                <div className="font-semibold text-[#8EAEC7] text-base">
+                <div className="hidden lg:block font-semibold text-[#8EAEC7] text-base">
                   {item.name}
                 </div>
               </motion.div>
