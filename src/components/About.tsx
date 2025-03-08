@@ -34,7 +34,7 @@ const About = () => {
                 Outside of coding, I enjoy golfing, experimenting with new recipes, and playing competitive shooters.
               </p>
               <div className="py-4 md:py-2 lg:py-1">
-                <InvertButton title="Resume" href="/SeanLucGhim-CS-Resume-3-5-25.pdf"/>
+                <InvertButton title="Resume" href="/SeanLucGhim-Resume-LaTex.pdf"/>
               </div>
             </div>
 

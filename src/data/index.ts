@@ -155,7 +155,7 @@ export const navIcons = [
     id: 3,
     name: "Resume",
     img: "/resume.svg",
-    link: "/SeanLucGhim-CS-Resume-3-5-25.pdf",
+    link: "/SeanLucGhim-Resume-LaTex.pdf",
   }
 ]
 
