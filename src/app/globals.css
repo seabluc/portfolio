@@ -18,7 +18,7 @@
 
 @layer utilities {
   .heading {
-    @apply font-semibold text-3xl md:text-[42px] text-center;
+    @apply font-semibold text-4xl md:text-[42px] text-center;
   }
 
   .about-body {

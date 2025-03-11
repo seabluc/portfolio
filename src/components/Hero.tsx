@@ -7,16 +7,24 @@ import { navItems } from '@/data'
 
 const Hero = () => {
   return (
-    <header className="h-screen w-screen bg-white flex flex-col">
-      {/* Add Seattle silhouette bg */}
+    <header className="relative h-screen w-screen bg-white flex flex-col z-0">
+      {/* 
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 1.25, duration: 0.75, ease: "easeOut" }}
+      >
+        <img src="/seattle-bg.svg" alt="seattle" className="absolute -left-7 top-3 object-cover -z-10" />
+      </motion.div>
+      */}
       <motion.div
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.25, duration: 0.50, ease: "easeOut" }}
+        transition={{ delay: 1.25, duration: 0.75, ease: "easeOut" }}
       >
         <Nav />
       </motion.div>
-      <div className="flex flex-1 justify-center items-center">
+      <div className="flex flex-1 justify-center items-center relative z-10">
         <div className="flex flex-col justify-center items-start lg:mr-[28rem] lg:mb-[7.5rem]">
           <TextGenerateEffect
             className="text-[32px] md:text-5xl lg:text-6xl"

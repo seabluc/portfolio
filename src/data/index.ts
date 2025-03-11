@@ -1,8 +1,8 @@
 export const navItems = [
-  { name: "About", link: "#about", hero: "font-semibold lg:text-2xl border-[#8EAEC7] rounded-none bg-white text-[#8EAEC7] hover:border-[#8EAEC7] hover:bg-[#8EAEC7] hover:text-white px-5 py-1" },
-  { name: "Skills", link: "#skills", hero: "font-semibold lg:text-2xl border-[#8EAEC7] rounded-none bg-white text-[#8EAEC7] hover:border-[#8EAEC7] hover:bg-[#8EAEC7] hover:text-white px-5 py-1" },
-  { name: "Projects", link: "#projects", hero: "font-semibold lg:text-2xl border-[#8EAEC7] rounded-none bg-white text-[#8EAEC7] hover:border-[#8EAEC7] hover:bg-[#8EAEC7] hover:text-white px-5 py-1" },
-  { name: "Contact", link: "#contact", hero: "font-semibold lg:text-2xl border-[#8EAEC7] rounded-none bg-white text-[#8EAEC7] hover:border-[#8EAEC7] hover:bg-[#8EAEC7] hover:text-white px-5 py-1" },
+  { name: "About", link: "#about", hero: "font-semibold text-base md:text-2xl border-[#8EAEC7] rounded-none bg-white text-[#8EAEC7] hover:border-[#8EAEC7] hover:bg-[#8EAEC7] hover:text-white px-5 py-1" },
+  { name: "Skills", link: "#skills", hero: "font-semibold text-base md:text-2xl border-[#8EAEC7] rounded-none bg-white text-[#8EAEC7] hover:border-[#8EAEC7] hover:bg-[#8EAEC7] hover:text-white px-5 py-1" },
+  { name: "Projects", link: "#projects", hero: "font-semibold text-base md:text-2xl border-[#8EAEC7] rounded-none bg-white text-[#8EAEC7] hover:border-[#8EAEC7] hover:bg-[#8EAEC7] hover:text-white px-5 py-1" },
+  { name: "Contact", link: "#contact", hero: "font-semibold text-base md:text-2xl border-[#8EAEC7] rounded-none bg-white text-[#8EAEC7] hover:border-[#8EAEC7] hover:bg-[#8EAEC7] hover:text-white px-5 py-1" },
 ];
 
 export const skills = [
@@ -131,7 +131,7 @@ export const projects = [
     title: "MyTamaFriend",
     iconLists: ["/javascriptLogo.png", "/cssLogo.png", "/htmlLogo.png"],
     collabs: "David Schurer, Selina Nguyen, Shivam Bakshi",
-    des: "A Tamagotchi-inspire game where users take care of their own virtual pet, Mametchi, by managing his stats. Stats include hunger, happiness, health, and restroom. MyTamaFriend stimulates the experience of raising a digital pet and challenges the user to keep it alive and well.",
+    des: "A Tamagotchi-inspire game where users take care of their own virtual pet, Mametchi, by managing hunger, happiness, health, and restroom stats. MyTamaFriend stimulates the experience of raising a digital pet by challenging users to keep it alive and well.",
     live: "https://davidschurer.github.io/Tamagotchi-Game/",
     repo: "https://github.com/DavidSchurer/Tamagotchi-Game",
     img: "/mytamafriend.png",
