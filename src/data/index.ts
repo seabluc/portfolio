@@ -5,6 +5,27 @@ export const navItems = [
   { name: "Contact", link: "#contact", hero: "font-semibold text-base md:text-2xl border-[#8EAEC7] rounded-none bg-white text-[#8EAEC7] hover:border-[#8EAEC7] hover:bg-[#8EAEC7] hover:text-white px-5 py-1" },
 ];
 
+export const navIcons = [
+  {
+    id: 1,
+    name: "GitHub",
+    img: "/gitNav.svg",
+    link: "https://www.github.com/seabluc"
+  },
+  {
+    id: 2,
+    name: "LinkedIn",
+    img: "/linkNav.svg",
+    link: "https://www.linkedin.com/in/sean-luc-ghim/",
+  },
+  {
+    id: 3,
+    name: "Resume",
+    img: "/resume.svg",
+    link: "/SeanLucGhim-Resume-LaTex.pdf",
+  }
+];
+
 export const skills = [
   {
     id: 1,
@@ -137,27 +158,6 @@ export const projects = [
     img: "/mytamafriend.png",
   },
 ];
-
-export const navIcons = [
-  {
-    id: 1,
-    name: "GitHub",
-    img: "/gitNav.svg",
-    link: "https://www.github.com/seabluc"
-  },
-  {
-    id: 2,
-    name: "LinkedIn",
-    img: "/linkNav.svg",
-    link: "https://www.linkedin.com/in/sean-luc-ghim/",
-  },
-  {
-    id: 3,
-    name: "Resume",
-    img: "/resume.svg",
-    link: "/SeanLucGhim-Resume-LaTex.pdf",
-  }
-]
 
 export const contactIcons = [
   {

@@ -13,7 +13,7 @@ const Skills = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeIn" }}
           viewport={{ once: true }}
-          className="heading mt-16 mb-14 md:mt-0 md:mb-2 text-black-1">SKILLS
+          className="heading mt-16 mb-12 md:mt-0 md:mb-2 text-black-1">SKILLS
         </motion.h2>
         <motion.div
           initial={{ opacity: 0, y: -40 }}

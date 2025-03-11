@@ -43,7 +43,7 @@ export const FloatingNav = ({
     if (visible) {
       const timeout = setTimeout(() => {
         setVisible(false);
-      }, 2250);
+      }, 2000);
       return () => clearTimeout(timeout);
     }
   }, [visible])

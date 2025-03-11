@@ -24,7 +24,7 @@ const Footer = () => {
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8, duration: 0.6, ease: "easeInOut" }}
+          transition={{ delay: 0.75, duration: 0.6, ease: "easeInOut" }}
           viewport={{ once: true }}
           className="flex items-center md:gap-4 gap-6 md:my-1 ">
           {contactIcons.map((icon) => (
