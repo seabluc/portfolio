@@ -64,12 +64,20 @@ const Projects = () => {
                 {demo ? (
                   <div className="pb-4 border-b-2 md:border-none md:pb-0">
                     <Link href={demo} target="_blank" rel="noreferrer noopener">
-                      <img src={img} alt={demo} className="w-full max-w-md rounded-lg shadow-lg" />
+                      <motion.img
+                        whileHover={{ scale: 1.05 }}
+                        src={img}
+                        alt={demo}
+                        className="w-full max-w-md rounded-lg shadow-lg" />
                     </Link>
                     <span className="flex flex-row items-center justify-center p-4"><InvertButton title={"Video Demo"} href={demo} /></span>
                   </div>
                 ) : (
-                  <img src={img} alt={title} className="w-full max-w-md rounded-lg shadow-lg" />
+                  <motion.img
+                    whileHover={{ scale: 1.05 }}
+                    src={img}
+                    alt={title}
+                    className="w-full max-w-md rounded-lg shadow-lg" />
                 )}
               </motion.div>
 

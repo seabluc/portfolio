@@ -20,7 +20,7 @@ const Hero = () => {
       <motion.div
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 1.25, duration: 0.75, ease: "easeOut" }}
+        transition={{ delay: 1.0, duration: 0.75, ease: "easeOut" }}
       >
         <Nav />
       </motion.div>
@@ -29,18 +29,16 @@ const Hero = () => {
           <TextGenerateEffect
             className="text-[32px] md:text-5xl lg:text-6xl"
             words="Hi, I'm Sean-Luc Ghim."
-            duration={0.75}
           />
           <TextGenerateEffect
             className="md:tracking-wider text-xl md:text-lg lg:text-4xl"
             words="I'm a full-stack developer."
-            duration={0.75}
           />
           <motion.div
             className="flex flex-row mt-4 lg:mt-6 items-center justify-center"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1.25, duration: 0.75, ease: "easeOut" }}
+            transition={{ delay: 1.0, duration: 0.75, ease: "easeOut" }}
           >
             {navItems.map((section, idx: number) => (
               <InvertButton
