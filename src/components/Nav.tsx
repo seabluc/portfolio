@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <nav className="w-screen bg-white pt-6 lg:pr-11">
       <div className="flex items-center justify-evenly lg:justify-end lg:gap-11">
-        <AnimatedTooltip items={navIcons} />
+        <AnimatedTooltip items={navIcons} otherClasses="text-blue-1" />
       </div>
     </nav>
   )

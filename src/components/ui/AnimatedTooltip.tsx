@@ -12,13 +12,14 @@ import Link from "next/link";
 
 export const AnimatedTooltip = ({
   items,
+  otherClasses,
 }: {
   items: {
     id: number;
     name: string;
     img: string;
     link: string;
-  }[];
+  }[], otherClasses?: string;
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const springConfig = { stiffness: 100, damping: 5 };
@@ -72,7 +73,7 @@ export const AnimatedTooltip = ({
               >
                 <div className="absolute inset-x-10 w-[20%] h-px " />
                 <div className="absolute left-10 w-[40%] h-px " />
-                <div className="hidden lg:block font-semibold text-[#8EAEC7] text-base">
+                <div className={`hidden lg:block font-semibold ${otherClasses} text-base`}>
                   {item.name}
                 </div>
               </motion.div>
